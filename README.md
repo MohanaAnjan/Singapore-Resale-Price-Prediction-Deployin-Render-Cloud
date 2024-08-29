@@ -1,5 +1,7 @@
 # Singapore-Resale-Price-Prediction
 **Singapore Resale Flat Prices Prediction**
+### Live demo: [Resale prediction](https://singapore-resale-price-prediction-2.onrender.com)
+
 
 **Overview**
 
