@@ -1,9 +1,6 @@
 streamlit
-streamlit_option_menu
-json
+streamlit-option-menu
 requests
 pandas
-statistics
 numpy
-pickle
 scikit-learn
