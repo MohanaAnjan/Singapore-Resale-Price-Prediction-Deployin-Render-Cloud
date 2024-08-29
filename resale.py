@@ -1,3 +1,4 @@
+import os 
 import streamlit as st
 from streamlit_option_menu import option_menu
 import json
@@ -13,7 +14,13 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import GridSearchCV
 
 #-----------------------------------------------------------STREAMLIT---------------------------------------------------------------------------------------------------------
-df=pd.read_csv('D:/My Projects/Singapure-Resale-flat_price -Prediction/resale_csv')
+file_path = 'resale_csv'
+if os.path.exists(file_path):
+    df = pd.read_csv(file_path)
+else:
+    print(f"File not found: {file_path}")
+
+#df=pd.read_csv('D:/My Projects/Singapure-Resale-flat_price -Prediction/resale_csv')
 
 # -------------------------------This is the configuration page for our Streamlit Application----------------------------------------
 st.set_page_config(
